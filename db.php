@@ -1,8 +1,12 @@
 <?php
-	$json = '{"stars":['."\n";
 
+	$user = 'root';
+	$pass = '';
+
+
+	$json = '{"stars":['."\n";
 	try{
-		$db = new PDO("mysql:host=localhost;dbname=project", 'root', '');
+		$db = new PDO("mysql:host=localhost;dbname=project", $user, $pass);
 	}
 	catch(Exception $e){die($e->getMessage());}
 	$stars = $db -> query("select name,radius from star;");

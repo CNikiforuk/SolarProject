@@ -1,0 +1,34 @@
+Author: Carlos Nikiforuk
+Assignment: Solar System Project
+
+How to test:
+
+  1. Download the whole repository. It is the entire project folder that was used in htdocs of XAMPP
+  2. Move the files into htdocs of an XAMPP installation
+  3. Start XAMPP (./xampp start)
+  4. Create a database named "project" in MYSQL, and use the commands from "system.sql" to populate the tables.
+  5a. I just used "root" with no password to test my database (it was not allowing authentication for other users).
+  5b. If this is undesirable, you can set your own user, and pass at the top of db.php through variables $user and $pass.
+  5c. Make sure that whatever user you are using has access to the "project" database.
+  6. At this point you should be able to check localhost in your browser, and the main page will load.
+
+  ALTERNATIVELY:
+
+  1. If there is any issue, I can host it (after upping the security) on my IP temporarily.
+
+USEFUL INFO:
+  -The stars were scaled down in size, and the planets scaled up in size. Due to the inability to view it otherwise.
+  -You will need to adjust the sliders at the top to get an optimal view of other solar systems (due to the properties of them being so drastically different)
+    -(It feels like a bad solution, and I would rather implement a zoom and pan if I get time.)
+  -The whole canvas, tabs, and all animations are created dynamically based on data in the project database. Should be 100% scalable.
+
+  -I will be adding to this project if I get time to work on it.
+
+  TODO:
+	-include data about planets, "color : planetName" legend in canvas
+	-add more systems
+	-textures?
+	-use semiminor and semimajor axis to more create realistic elliptical orbits rather than circular
+	-rework the canvas image view / navigation, to better show the system OR
+ 	-entirely rework the graphics to use transformation matrices, consider webgl
+	
