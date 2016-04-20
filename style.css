@@ -1,0 +1,174 @@
+/*
+  Lab assignment 2 Branches
+  Author: Carlos Nikiforuk
+  Date: Jan 20, 2016
+*/
+
+/* custom font for banner */
+@font-face { font-family: stonehen; src: url('font/stonehen.ttf'); } 
+
+/* standard */
+header h1{
+    background-color:rgba(0, 0, 0, 0.6);
+    
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 88%;
+    
+    color: white;
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+h1{
+    margin: 0;
+    font: bold 2.5em  stonehen, sans-serif, serif;
+}
+
+h2, h3, h4{
+    width: 100%;
+}
+
+p{
+    margin: 0;
+    font-size: 1em;
+    text-align: justify;
+}
+
+body{
+    margin: 0;
+    background: transparent url(image/bg.jpg) top;
+    min-width: 500px;
+}
+
+footer{
+    background-color:rgba(0, 0, 0, .9);
+    color: black;
+    border-top: 1px solid rgb(192,192,192);
+}
+
+footer p{
+	color: white;
+    text-align: center;
+    word-spacing: 20px;
+}
+
+footer small{
+    text-align: center;
+}
+
+ul {
+	list-style-position: inside;
+	padding-left: 0;
+	margin: 0;
+}
+
+.active{
+	background-color: rgba(0,0,0, 1);
+}
+
+li{
+	width: 50px;
+	display: inline;
+}
+
+li p{
+	display: inline-block;
+	width: 75px;
+	text-align: center;
+	cursor: pointer; cursor: hand;
+	color: white;
+	margin: 0px;
+	padding: 10px;
+	background-color: rgba(0,181,185,0.7);
+}
+
+li p:hover{
+	text-decoration: none;
+	background-color: rgba(0,0,0, 1);
+}
+
+ul img, ol img{
+    float: left;
+    vertical-align: middle;
+}
+
+label {
+    display:block;
+}
+input {
+    display:inline;
+	width: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+}
+
+a img{
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+}
+a img:hover{
+    opacity:0.6;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:focus,a:active{
+
+}
+
+
+/* id */
+#logo{
+    padding-right: 6vw;
+    vertical-align: middle;
+    position: relative;
+    transition: opacity 0.2s ease-out;
+    opacity: 1;
+}
+
+#logo:hover{
+    opacity: 0.7;
+}
+
+
+#solarCanvas{
+	padding: 10px;
+	background-color: rgba(0,0,0, 1);
+}
+
+
+.content{
+    background-color:rgba(222, 222, 222, 0.6);
+    color: white;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 88%;
+    overflow: hidden;
+    
+    font: 1em  sans-serif, serif;
+}
+
+.controls {
+
+	margin-bottom: 5px;
+
+}
+
+.slider {
+	display:inline-block;
+	width: 300px;
+	height: 10px;
+	margin-left: 10px;
+
+}
+

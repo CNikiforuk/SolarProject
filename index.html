@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+
+<!--    
+Author: Carlos Nikiforuk
+!-->
+
+<head>
+ <meta charset="utf-8">
+ <title>Solar</title>
+ <link href = "style.css" type = "text/css" rel = "stylesheet" />
+ <script src="solar.js" type="text/javascript"></script>
+ <script src="jquery-2.2.1.js" type="text/javascript"></script>	
+ <link rel="stylesheet" href="jquery-ui.min.css">
+ <script src="external/jquery/jquery.js"></script>
+ <script src="jquery-ui.min.js"></script>
+ <link rel="icon" type="image/ico" href="favicon.ico"> 
+ <meta name="author" content="Carlos Nikiforuk">
+</head>
+
+<body onload="loadContent();">
+
+<header>
+ <h1><a href="index.html" title="Home"><img id="logo" src="image/logo.png" alt="logo" height="100" width="100"></a>Solar Systems</h1>
+</header>
+
+<div class="content" id="content">
+	<div class="controls">
+		<p>Time Scale</p><input type="float" name="time" id="time"></input><div id="timeSlider" class="slider"></div>
+		<p>Planet Size</p><input type="float" name="size" id="size"></input><div id="sizeSlider" class="slider"></div>
+		<p>Distance Scale</p><input type="float" name="dist" id="dist"></input><div id="distSlider" class="slider"></div>
+	</div>	
+	<ul class="solarNav" id="solarNav"></ul>
+	<div class=solarView id="solarView">
+		<canvas id="solarCanvas" width="800" height="600">Unable to load canvas</canvas>
+	</div>
+
+</div>
+
+
+
+<footer>
+ <p><a href="">Home</a> <a href=about.html>About</a></p>
+ <p><small>Copyright&#169;[].com</small></p> 
+</footer>
+
+
+</body>
+
+</html>
